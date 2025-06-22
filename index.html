@@ -24,6 +24,12 @@
       img.alt = 'Secret Image';
       content.appendChild(img);
 
+    } else if (code === '69') {
+      const gif = document.createElement('img');
+      gif.src = 'image/rick.gif';
+      gif.alt = 'Rick Rolled LOL';
+      content.appendChild(gif);
+  
     } else if (code === '42') {
       // 直接跳轉
       window.location.href = 'https://youtu.be/dQw4w9WgXcQ'; // ← 換成你要導向的網址
@@ -43,9 +49,11 @@
     } else if (code === null) {
       // 預設顯示文字
       content.textContent = '請輸入正確的代碼才能看到秘密內容。';
+      
     }
     else {
       content.textContent = '代碼錯誤！';
+      
     }
   </script>
 </body>
